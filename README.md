@@ -6,7 +6,6 @@ simple-rpc是一个基于netty+springboot+zookeeper的分布式服务框架，�
 *  实现了一致性哈希/轮询/随机/加权随机和最小活跃度等负载均衡算法
 *  实现了failover/failfast/failsafe三种集群容错机制
 *  基于springboot的自动配置功能实现bean的加载，并且自定义了一个springboot-starter插件供用户使用
-*  实现简易扩展点(类似Java的SPI机制)
 ## 分层设计
 分层设计是为了解耦，下层向上层暴露接口，上层只需要调用下层的接口而无需关心实现，具体实现类由用户通过配置文件来配置，避免硬编码。
 ## 架构图
